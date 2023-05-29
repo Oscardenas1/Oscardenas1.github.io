@@ -97,22 +97,6 @@ $conn->close();
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="user-info">
-            <?php
-            // Display user's email if logged in
-            if (isset($_SESSION["email"])) {
-                echo '<div class="user-icon"><i class="fa fa-user"></i></div>';
-                echo $_SESSION["email"];
-            }
-            ?>
-        </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
 
     <h1>Login</h1>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
